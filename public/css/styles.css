@@ -1,0 +1,51 @@
+body{
+
+  font-family: arial;
+  padding-left:70px;
+  display:flex;
+  flex-direction: column;
+  height: 100vh;
+  
+}
+header{
+  background:white;
+  margin-top: 20px;
+  margin-left: 20px;
+  box-shadow: 1px 2px 2px 0px gray;
+  padding-left: 10px;
+  border-bottom: rgba(232, 232, 232, 50) solid
+}
+header a{
+  
+  text-decoration: none;
+  font-size: 15px;
+}
+header h1{
+  font-size: xx-large;
+
+}
+
+footer{
+  background:white;
+  margin-top: 40px;
+  margin-left: 20px;
+  padding-left: 10px;
+  font-size: 7px;
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+
+
+
+main{
+  background: white;
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 10px;
+  /*box-shadow: 0px -10px 30px gray;*/
+  padding-left: 10px;
+}
+
+main p{
+  font-size: 15px;
+}
