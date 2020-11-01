@@ -4,6 +4,10 @@ const hbs = require("hbs")
 const request=require("request")
 const {geocode,forecast} = require("./utils/utils.js")
 
+//il faut obtenir le valeur de port de environment variables
+
+const port=process.env.PORT || 3000
+
 //paths for Express config
 const viewPath= path.join(__dirname, "../templates/views")
 const publicDirectoryPath = path.join(__dirname,"../public")
@@ -98,8 +102,8 @@ app.get("*", (req,res)=>{
 
 
 
-app.listen(3000, ()=>{
-  console.log("Webserver started on port 3000")
+app.listen(port, ()=>{
+  console.log("Webserver started on port "+ port)
 })
 
 

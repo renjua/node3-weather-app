@@ -3,7 +3,7 @@ const form = document.querySelector("form")
 const cityname = document.querySelector("input")
 form.addEventListener("submit", (e) => {
   e.preventDefault()
-  fetch("http://localhost:3000/weather?address=" + cityname.value).then((response) => {
+  fetch("/weather?address=" + cityname.value).then((response) => {
     response.json().then((data) => {
       console.log(data.place)
       const forecast = document.querySelector("#forecast")
