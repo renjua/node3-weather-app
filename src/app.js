@@ -60,6 +60,7 @@ app.get("/weather", (req,res)=>{
       //console.log(geocoordinates)
       forecast(geocoordinates[1].toString(), geocoordinates[0].toString(),(error,weatherinfo)=>{
         if(error ===undefined){
+          //console.log(weatherinfo)
         res.send({
           place,
           region,

@@ -33,14 +33,17 @@ const forecast = function (longitude, latitude, callback) {
     json: true
   }, (error, {body}) => {
     if(!error){
-      
+      //console.log(body)
     callback(undefined,{
       place: body.location.name,
       region: body.location.region,
       lattitude: body.location.lat,
       longitude: body.location.lon,
       temperature: body.current.temperature,
-      weatherforecast: body.current.weather_descriptions[0]
+      weatherforecast: body.current.weather_descriptions[0],
+      feelslike: body.current.feelslike,
+      humidity: body.current.humidity,
+      observationtime:body.current.observationtime
     })
     }
     else {
